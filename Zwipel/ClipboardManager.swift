@@ -70,4 +70,26 @@ class ClipboardManager: ObservableObject {
         guard let index = history.firstIndex(where: { $0.id == item.id }) else { return }
         history[index].isPinned.toggle()
     }
+    func clearUnpinnedHistory() {
+            history.removeAll { !$0.isPinned }
+        }
+    func presentClearConfirmation() {
+           NSApplication.shared.activate(ignoringOtherApps: true)
+           
+           let alert = NSAlert()
+           alert.messageText = "Удалить все незакрепленные?"
+           alert.informativeText = "Это действие нельзя будет отменить."
+           alert.alertStyle = .warning
+           
+           alert.addButton(withTitle: "Удалить")
+           alert.addButton(withTitle: "Отмена")
+           
+           let response = alert.runModal()
+           
+           if response == .alertFirstButtonReturn {
+               DispatchQueue.main.async {
+                   self.clearUnpinnedHistory()
+               }
+           }
+       }
 }

@@ -35,15 +35,46 @@ struct ContentView: View {
                 .listStyle(.plain)
             }
             
-            FooterView()
+            FooterView(
+                hasUnpinnedItems: clipboardManager.history.contains { !$0.isPinned }
+            )
         }
     }
 }
 
+struct FooterView: View {
+    @EnvironmentObject var clipboardManager: ClipboardManager
+    
+    let hasUnpinnedItems: Bool
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Divider()
+            HStack {
+                Text("Zwipel v0.5")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+                
+                Button("Очистить") {
+                    clipboardManager.presentClearConfirmation()
+                }
+                .disabled(!hasUnpinnedItems)
+                
+                Button("Выход") {
+                    NSApplication.shared.terminate(nil)
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+
 struct ClipboardRowView: View {
     @EnvironmentObject var clipboardManager: ClipboardManager
     let item: ClipboardItem
-
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
@@ -54,47 +85,17 @@ struct ClipboardRowView: View {
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
-            
             Spacer()
-            
             HStack(spacing: 12) {
-                Button(action: {
-                    clipboardManager.togglePin(for: item)
-                }) {
-                    Image(systemName: item.isPinned ? "pin.fill" : "pin")
-                        .foregroundColor(item.isPinned ? .accentColor : .secondary)
-                }
-                .buttonStyle(.plain)
-                
-                Button(action: {
-                    clipboardManager.deleteItem(item: item)
-                }) {
-                    Image(systemName: "trash")
-                        .foregroundColor(.red)
-                }
-                .buttonStyle(.plain)
+                Button(action: { clipboardManager.togglePin(for: item) }) { Image(systemName: item.isPinned ? "pin.fill" : "pin").foregroundColor(item.isPinned ? .accentColor : .secondary) }.buttonStyle(.plain)
+                Button(action: { clipboardManager.deleteItem(item: item) }) { Image(systemName: "trash").foregroundColor(.red) }.buttonStyle(.plain)
             }
         }
         .padding(.vertical, 4)
         .contentShape(Rectangle())
-        .onTapGesture {
-            clipboardManager.copyToClipboard(item: item)
-        }
-        .swipeActions(edge: .leading, allowsFullSwipe: true) {
-            Button {
-                clipboardManager.togglePin(for: item)
-            } label: {
-                Label(item.isPinned ? "Открепить" : "Закрепить", systemImage: "pin.fill")
-            }
-            .tint(item.isPinned ? .gray : .accentColor)
-        }
-        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-            Button(role: .destructive) {
-                clipboardManager.deleteItem(item: item)
-            } label: {
-                Label("Удалить", systemImage: "trash")
-            }
-        }
+        .onTapGesture { clipboardManager.copyToClipboard(item: item) }
+        .swipeActions(edge: .leading, allowsFullSwipe: true) { Button { clipboardManager.togglePin(for: item) } label: { Label(item.isPinned ? "Открепить" : "Закрепить", systemImage: "pin.fill") }.tint(item.isPinned ? .gray : .accentColor) }
+        .swipeActions(edge: .trailing, allowsFullSwipe: true) { Button(role: .destructive) { clipboardManager.deleteItem(item: item) } label: { Label("Удалить", systemImage: "trash") } }
         .contextMenu {
             Button { clipboardManager.copyToClipboard(item: item) } label: { Label("Копировать", systemImage: "doc.on.doc") }
             Button { clipboardManager.togglePin(for: item) } label: { Label(item.isPinned ? "Открепить" : "Закрепить", systemImage: "pin") }
@@ -103,7 +104,6 @@ struct ClipboardRowView: View {
         }
     }
 }
-
 
 struct SearchBarView: View {
     @Binding var text: String
@@ -121,20 +121,5 @@ struct SearchBarView: View {
                     }
                 })
         }.padding(.horizontal).padding(.vertical, 8)
-    }
-}
-
-struct FooterView: View {
-    var body: some View {
-        VStack(spacing: 0) {
-            Divider()
-            HStack {
-                Text("Zwipel v0.3")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
-                Spacer()
-                Button("Выход") { NSApplication.shared.terminate(nil) }
-            }.padding()
-        }
     }
 }

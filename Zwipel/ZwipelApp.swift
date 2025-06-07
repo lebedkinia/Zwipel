@@ -12,7 +12,7 @@ struct ZwipelApp: App {
     @StateObject private var clipboardManager = ClipboardManager()
 
     var body: some Scene {
-        MenuBarExtra("Zwipel", systemImage: "doc.on.clipboard") {
+        MenuBarExtra("Zwipel", systemImage: "list.clipboard.fill") {
             ContentView()
                 .environmentObject(clipboardManager)
                 .frame(width: 350, height: 400)
