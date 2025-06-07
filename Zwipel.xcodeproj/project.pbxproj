@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		BD17A6662DDE42F300C298E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD17A64F2DDE42F200C298E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD17A6562DDE42F200C298E7;
+			remoteInfo = Zwipel;
+		};
+		BD17A6702DDE42F300C298E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD17A64F2DDE42F200C298E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD17A6562DDE42F200C298E7;
+			remoteInfo = Zwipel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD17A6572DDE42F200C298E7 /* Zwipel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zwipel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD17A6652DDE42F300C298E7 /* ZwipelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZwipelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD17A66F2DDE42F300C298E7 /* ZwipelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZwipelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BD17A6592DDE42F200C298E7 /* Zwipel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Zwipel;
+			sourceTree = "<group>";
+		};
+		BD17A6682DDE42F300C298E7 /* ZwipelTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZwipelTests;
+			sourceTree = "<group>";
+		};
+		BD17A6722DDE42F300C298E7 /* ZwipelUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZwipelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD17A6542DDE42F200C298E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A6622DDE42F300C298E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A66C2DDE42F300C298E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD17A64E2DDE42F200C298E7 = {
+			isa = PBXGroup;
+			children = (
+				BD17A6592DDE42F200C298E7 /* Zwipel */,
+				BD17A6682DDE42F300C298E7 /* ZwipelTests */,
+				BD17A6722DDE42F300C298E7 /* ZwipelUITests */,
+				BD17A6582DDE42F200C298E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD17A6582DDE42F200C298E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD17A6572DDE42F200C298E7 /* Zwipel.app */,
+				BD17A6652DDE42F300C298E7 /* ZwipelTests.xctest */,
+				BD17A66F2DDE42F300C298E7 /* ZwipelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD17A6562DDE42F200C298E7 /* Zwipel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD17A6792DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "Zwipel" */;
+			buildPhases = (
+				BD17A6532DDE42F200C298E7 /* Sources */,
+				BD17A6542DDE42F200C298E7 /* Frameworks */,
+				BD17A6552DDE42F200C298E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BD17A6592DDE42F200C298E7 /* Zwipel */,
+			);
+			name = Zwipel;
+			packageProductDependencies = (
+			);
+			productName = Zwipel;
+			productReference = BD17A6572DDE42F200C298E7 /* Zwipel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD17A6642DDE42F300C298E7 /* ZwipelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD17A67C2DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "ZwipelTests" */;
+			buildPhases = (
+				BD17A6612DDE42F300C298E7 /* Sources */,
+				BD17A6622DDE42F300C298E7 /* Frameworks */,
+				BD17A6632DDE42F300C298E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD17A6672DDE42F300C298E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD17A6682DDE42F300C298E7 /* ZwipelTests */,
+			);
+			name = ZwipelTests;
+			packageProductDependencies = (
+			);
+			productName = ZwipelTests;
+			productReference = BD17A6652DDE42F300C298E7 /* ZwipelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD17A66E2DDE42F300C298E7 /* ZwipelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD17A67F2DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "ZwipelUITests" */;
+			buildPhases = (
+				BD17A66B2DDE42F300C298E7 /* Sources */,
+				BD17A66C2DDE42F300C298E7 /* Frameworks */,
+				BD17A66D2DDE42F300C298E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD17A6712DDE42F300C298E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD17A6722DDE42F300C298E7 /* ZwipelUITests */,
+			);
+			name = ZwipelUITests;
+			packageProductDependencies = (
+			);
+			productName = ZwipelUITests;
+			productReference = BD17A66F2DDE42F300C298E7 /* ZwipelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD17A64F2DDE42F200C298E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					BD17A6562DDE42F200C298E7 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					BD17A6642DDE42F300C298E7 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = BD17A6562DDE42F200C298E7;
+					};
+					BD17A66E2DDE42F300C298E7 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = BD17A6562DDE42F200C298E7;
+					};
+				};
+			};
+			buildConfigurationList = BD17A6522DDE42F200C298E7 /* Build configuration list for PBXProject "Zwipel" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD17A64E2DDE42F200C298E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BD17A6582DDE42F200C298E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD17A6562DDE42F200C298E7 /* Zwipel */,
+				BD17A6642DDE42F300C298E7 /* ZwipelTests */,
+				BD17A66E2DDE42F300C298E7 /* ZwipelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD17A6552DDE42F200C298E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A6632DDE42F300C298E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A66D2DDE42F300C298E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD17A6532DDE42F200C298E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A6612DDE42F300C298E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD17A66B2DDE42F300C298E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD17A6672DDE42F300C298E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD17A6562DDE42F200C298E7 /* Zwipel */;
+			targetProxy = BD17A6662DDE42F300C298E7 /* PBXContainerItemProxy */;
+		};
+		BD17A6712DDE42F300C298E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD17A6562DDE42F200C298E7 /* Zwipel */;
+			targetProxy = BD17A6702DDE42F300C298E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD17A6772DDE42F300C298E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD17A6782DDE42F300C298E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BD17A67A2DDE42F300C298E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zwipel/Zwipel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.Zwipel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BD17A67B2DDE42F300C298E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zwipel/Zwipel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.Zwipel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BD17A67D2DDE42F300C298E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.ZwipelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zwipel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zwipel";
+			};
+			name = Debug;
+		};
+		BD17A67E2DDE42F300C298E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.ZwipelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zwipel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zwipel";
+			};
+			name = Release;
+		};
+		BD17A6802DDE42F300C298E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.ZwipelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Zwipel;
+			};
+			name = Debug;
+		};
+		BD17A6812DDE42F300C298E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "lebedkin-co.ZwipelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Zwipel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD17A6522DDE42F200C298E7 /* Build configuration list for PBXProject "Zwipel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD17A6772DDE42F300C298E7 /* Debug */,
+				BD17A6782DDE42F300C298E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD17A6792DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "Zwipel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD17A67A2DDE42F300C298E7 /* Debug */,
+				BD17A67B2DDE42F300C298E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD17A67C2DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "ZwipelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD17A67D2DDE42F300C298E7 /* Debug */,
+				BD17A67E2DDE42F300C298E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD17A67F2DDE42F300C298E7 /* Build configuration list for PBXNativeTarget "ZwipelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD17A6802DDE42F300C298E7 /* Debug */,
+				BD17A6812DDE42F300C298E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD17A64F2DDE42F200C298E7 /* Project object */;
+}
